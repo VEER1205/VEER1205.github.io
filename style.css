@@ -310,7 +310,7 @@ footer {
 @media (max-width: 450px){
     .navbar {
     backdrop-filter: none;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .nav-container .nav-links {
     display: none;
