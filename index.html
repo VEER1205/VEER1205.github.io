@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veer Dodiya | Backend & Data Science</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Veer Dodiya | Stark Protocol</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rajdhani:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <div class="hud-corner-top-left">SYSTEM: ONLINE</div>
+    <div class="hud-corner-top-right">RANK: 994</div>
+    <div class="hud-lines"></div>
+
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">VEER DODIYA <span class="dot">.</span></div>
+            <div class="logo">VEER DODIYA <span class="reactor-dot">●</span></div>
             <div class="menu-toggle">
                 <span></span>
                 <span></span>
@@ -22,62 +26,65 @@
                 <li><a href="#about">PROFILE</a></li>
                 <li><a href="#experience">MISSIONS</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#skills">ARSENAL</a></li>
+                <li><a href="#alliance">ALLIANCE</a></li>
             </ul>
         </div>
     </nav>
 
     <section id="hero" class="hero">
-        <div class="hero-overlay"></div>
+        <div class="hex-grid"></div>
         <div class="hero-content">
-            <h2 class="rank">OPERATIVE RANK: NEWBIE (866)</h2>
+            <div class="arc-reactor-container">
+                <div class="arc-reactor-glow"></div>
+            </div>
+            <h2 class="rank-display">MAX RATING: 994 <span class="cyan-text">| CODEFORCES</span></h2>
             <h1 class="hero-title">VEER DODIYA</h1>
             <div class="role-container">
-                <span id="typed-text" class="marvel-text"></span>
+                <span id="typed-text" class="hud-text"></span>
             </div>
-            <p class="tagline">SPECIALIZING IN BACKEND ARCHITECTURE & DATA INTELLIGENCE</p>
+            <p class="tagline">"SOMETIMES YOU GOTTA RUN BEFORE YOU CAN WALK."</p>
             
             <div class="cta-buttons">
-                <a href="#projects" class="btn-marvel primary">VIEW PROJECTS</a>
-                <a href="VEER DODIYA.pdf" class="btn-marvel secondary">DOWNLOAD DOSSIER</a>
+                <a href="#projects" class="btn-stark">MK-42 PROJECTS</a>
+                <a href="VEER DODIYA.pdf" class="btn-spidey">DOWNLOAD DATA</a>
             </div>
         </div>
     </section>
 
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">PROFILE OVERVIEW <span class="line"></span></h2>
+            <h2 class="section-title">OPERATIVE DATA <span class="line-red"></span></h2>
             <div class="grid-2">
                 <div class="about-text fade-in">
                     <p>
-                        I am a Computer Science Engineering student at <strong>Dwarkadas J. Sanghvi College of Engineering</strong> [cite: 6] with a CGPA of <strong>8.305</strong>[cite: 7]. 
+                        Like Peter Parker, I believe in using my powers (coding) for good. [cite_start]I am a Computer Science Engineering student at <strong>Dwarkadas J. Sanghvi College of Engineering</strong> (CGPA: 8.305)[cite: 6, 7].
                     </p>
                     <p>
-                        My expertise lies in building scalable backend infrastructure and data-driven solutions. I have solved over <strong>100+ coding problems</strong> across LeetCode and other platforms[cite: 33], specializing in Data Structures, Algorithms, and SQL optimization.
+                        I specialize in building backend architectures that are as reliable as Jarvis. [cite_start]I have solved over <strong>100+ coding problems</strong>[cite: 33], proving that I don't just write code—I solve puzzles.
                     </p>
                     <div class="stats-box">
-                        <div class="stat">
-                            <h3>5★</h3>
-                            <p>HackerRank (Python/SQL) [cite: 32]</p>
+                        <div class="stat iron-border">
+                            <h3>994</h3>
+                            <p>Codeforces (Max)</p>
                         </div>
-                        <div class="stat">
+                        <div class="stat spidey-border">
                             <h3>Top 40</h3>
-                            <p>Maharashtra Hackathon [cite: 18]</p>
+                            [cite_start]<p>State Hackathon [cite: 18]</p>
                         </div>
                     </div>
                 </div>
-                <div class="education-card fade-in">
-                    <h3 class="card-header">EDUCATION LOG</h3>
+                <div class="education-card fade-in glass-panel">
+                    <h3 class="card-header">ACADEMIC LOG</h3>
                     <ul class="timeline">
                         <li>
                             <span class="date">2023 - Present</span>
                             <h4>B.Tech in Computer Science (Data Science)</h4>
-                            <p>Dwarkadas J. Sanghvi College of Engineering [cite: 6, 7]</p>
+                            <p>Dwarkadas J. Sanghvi College of Engineering</p>
                         </li>
                         <li>
                             <span class="date">2021 - 2023</span>
                             <h4>HSC (Science)</h4>
-                            <p>SVP Junior College - 97.68%ile CET [cite: 8, 9]</p>
+                            [cite_start]<p>SVP Junior College - 97.68%ile CET [cite: 9]</p>
                         </li>
                     </ul>
                 </div>
@@ -87,96 +94,104 @@
 
     <section id="experience" class="section dark-bg">
         <div class="container">
-            <h2 class="section-title">MISSION LOG (EXPERIENCE) <span class="line"></span></h2>
+            <h2 class="section-title">MISSION LOG <span class="line-cyan"></span></h2>
             <div class="timeline-vertical fade-in">
                 
-                <div class="mission-card">
+                <div class="mission-card iron-theme">
                     <div class="mission-header">
                         <h3>BACKEND DEVELOPER</h3>
                         <span class="mission-date">SEPT 2025 - DEC 2025</span>
                     </div>
-                    <h4 class="mission-loc">Google's Gen AI Hackathon (Hack2Skill) [cite: 11]</h4>
-                    <p>Developed RESTful API endpoints and backend infrastructure for the "Futuro" application using <strong>FastAPI</strong>. Integrated Google's Generative AI APIs for intelligent data processing as part of a 6-member squad. [cite: 16, 17]</p>
+                    [cite_start]<h4 class="mission-loc">Google's Gen AI Hackathon [cite: 11]</h4>
+                    <p>Built the "Futuro" app backend using <strong>FastAPI</strong>. [cite_start]Integrated Google's Generative AI, acting as the 'Friday' to the team's 'Iron Man'[cite: 16, 17].</p>
                 </div>
 
-                <div class="mission-card">
+                <div class="mission-card spidey-theme">
                     <div class="mission-header">
                         <h3>BACKEND ARCHITECT</h3>
                         <span class="mission-date">SEPT 2025</span>
                     </div>
-                    <h4 class="mission-loc">Bit and Build Hackathon (Top 40) [cite: 18]</h4>
-                    <p>Engineered the complete backend for "Paisa Buddy" using <strong>Express.js</strong> and <strong>Node.js</strong>. Implemented secure authentication and session management under tight deadlines. [cite: 20]</p>
+                    [cite_start]<h4 class="mission-loc">Bit and Build Hackathon [cite: 18]</h4>
+                    [cite_start]<p>Web-slung through the competition to hit Top 40. Developed the backend for "Paisa Buddy" using <strong>Express.js</strong> and <strong>Node.js</strong>[cite: 20].</p>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="alliance" class="section">
         <div class="container">
-            <h2 class="section-title">PROJECT ARCHIVE <span class="line"></span></h2>
+            <h2 class="section-title">THE ALLIANCE (TOP 5) <span class="line-gold"></span></h2>
+            <div class="avenger-grid">
+                
+                <div class="avenger-card iron-man-card fade-in">
+                    <div class="card-overlay"></div>
+                    <h3>IRON MAN</h3>
+                    <p class="role">The Armored Genius</p>
+                    <div class="power-bar" style="width: 100%"></div>
+                </div>
+
+                <div class="avenger-card spidey-card fade-in">
+                    <div class="card-overlay"></div>
+                    <h3>SPIDER-MAN</h3>
+                    <p class="role">The Friendly Neighborhood</p>
+                    <div class="power-bar" style="width: 95%"></div>
+                </div>
+
+                <div class="avenger-card fade-in">
+                    <h3>THOR</h3>
+                    <p class="role">God of Thunder</p>
+                    <div class="power-bar" style="width: 90%"></div>
+                </div>
+
+                <div class="avenger-card fade-in">
+                    <h3>CAPTAIN AMERICA</h3>
+                    <p class="role">The First Avenger</p>
+                    <div class="power-bar" style="width: 85%"></div>
+                </div>
+
+                 <div class="avenger-card fade-in">
+                    <h3>DR. STRANGE</h3>
+                    <p class="role">Sorcerer Supreme</p>
+                    <div class="power-bar" style="width: 88%"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section dark-bg">
+        <div class="container">
+            <h2 class="section-title">PROJECT ARCHIVE <span class="line-cyan"></span></h2>
             <div class="grid-3">
                 
                 <div class="project-card fade-in">
                     <div class="card-content">
                         <h3>MONEY MANAGER</h3>
-                        <p class="project-desc">A desktop finance application with advanced filtering and CRUD functionality.</p>
+                        [cite_start]<p class="project-desc">Desktop finance app with CustomTkinter GUI (Stark-level interface) and MySQL[cite: 22].</p>
                         <div class="tech-stack-mini">
-                            <span>Python</span><span>FastAPI</span><span>MySQL</span><span>CustomTkinter</span>
+                            <span>Python</span><span>FastAPI</span><span>MySQL</span>
                         </div>
-                        <p class="source-cite">[cite: 22]</p>
                     </div>
                 </div>
 
                 <div class="project-card fade-in">
                     <div class="card-content">
                         <h3>X AND O (GAME)</h3>
-                        <p class="project-desc">Interactive GUI-based Tic-Tac-Toe game using OOP principles for clean architecture.</p>
+                        <p class="project-desc">Interactive Tic-Tac-Toe using KivyMD. [cite_start]Simple, but strategic[cite: 23].</p>
                         <div class="tech-stack-mini">
-                            <span>Python</span><span>KivyMD</span><span>OOP</span>
+                            <span>Python</span><span>KivyMD</span>
                         </div>
-                        <p class="source-cite">[cite: 23]</p>
                     </div>
                 </div>
 
                 <div class="project-card fade-in">
                     <div class="card-content">
-                        <h3>PAISA BUDDY API</h3>
-                        <p class="project-desc">Backend financial management system built during the Bit & Build Hackathon.</p>
+                        <h3>PONG GAME</h3>
+                        [cite_start]<p class="project-desc">Classic arcade game development using PyGame logic[cite: 27].</p>
                         <div class="tech-stack-mini">
-                            <span>Node.js</span><span>Express</span><span>Auth</span>
+                            <span>PyGame</span><span>OOP</span>
                         </div>
-                        <p class="source-cite">[cite: 20]</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section dark-bg">
-        <div class="container">
-            <h2 class="section-title">TECHNICAL ARSENAL <span class="line"></span></h2>
-            <div class="skills-wrapper fade-in">
-                
-                <div class="skill-category">
-                    <h3><span class="red-icon">></span> LANGUAGES</h3>
-                    <div class="tags">
-                        <span>Python</span><span>Java</span><span>C/C++</span><span>JavaScript</span><span>SQL</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><span class="red-icon">></span> FRAMEWORKS</h3>
-                    <div class="tags">
-                        <span>FastAPI</span><span>Django</span><span>Express.js</span><span>CustomTkinter</span><span>KivyMD</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><span class="red-icon">></span> TOOLS</h3>
-                    <div class="tags">
-                        <span>Git/GitHub</span><span>VS Code</span><span>MySQL</span><span>Postman</span><span>Jupyter</span>
                     </div>
                 </div>
 
@@ -189,9 +204,8 @@
             <div class="social-links">
                 <a href="https://linkedin.com/in/veer-Dodiya" target="_blank">LINKEDIN</a>
                 <a href="https://github.com/VEER1205" target="_blank">GITHUB</a>
-                <a href="mailto:dodiyaveer12@gmail.com">EMAIL</a>
             </div>
-            <p>&copy; 2025 VEER DODIYA. SYSTEM STATUS: ONLINE.</p>
+            <p>&copy; 2025 VEER DODIYA. "I LOVE YOU 3000."</p>
         </div>
     </footer>
 
