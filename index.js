@@ -1,13 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. TYPING EFFECT (JARVIS STYLE)
+    // 1. TYPING EFFECT (Professional)
     const typedTextSpan = document.getElementById('typed-text');
-    const textArray = ["INITIALIZING PROTOCOLS...", "BACKEND DEVELOPER", "CODEFORCES: 994", "WEB SLINGER"];
+    const textArray = ["BACKEND DEVELOPER", "DATA SCIENTIST", "COMPETITIVE PROGRAMMER"];
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
 
     function type() {
+        if (!typedTextSpan) return;
         const currentText = textArray[textIndex];
         
         if (isDeleting) {
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isDeleting) typeSpeed /= 2;
 
         if (!isDeleting && charIndex === currentText.length) {
-            typeSpeed = 2000; // Pause at end
+            typeSpeed = 2000;
             isDeleting = true;
         } else if (isDeleting && charIndex === 0) {
             isDeleting = false;
@@ -33,9 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(type, typeSpeed);
     }
     
-    if(typedTextSpan) type();
+    type();
 
-    // 2. FADE IN ANIMATION (SCROLL OBSERVER)
+    // 2. FADE IN ANIMATION
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -46,21 +47,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    // 3. MOBILE MENU
-    const menuToggle = document.querySelector('.menu-toggle');
+    // 3. MOBILE MENU TOGGLE
+    const menuToggle = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
 
     if (menuToggle) {
         menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            navLinks.style.display = navLinks.classList.contains('active') ? 'flex' : 'none';
+            navLinks.style.display = (navLinks.style.display === 'flex') ? 'none' : 'flex';
             navLinks.style.flexDirection = 'column';
             navLinks.style.position = 'absolute';
             navLinks.style.top = '70px';
             navLinks.style.left = '0';
             navLinks.style.width = '100%';
-            navLinks.style.background = 'black';
+            navLinks.style.background = '#050505';
             navLinks.style.padding = '20px';
+            navLinks.style.borderBottom = '1px solid #333';
         });
     }
 });
